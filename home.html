@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUDA-MUDI</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Tambahkan FontAwesome untuk icon musik -->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+  <!-- SECTION HERO -->
+<section id="welcome" class="hero">
+  <h1>"WELCOME TO MUDA-MUDI"</h1>
+  <div class="hero-photo">
+    <img src="img/foto-bersama.jpg" alt="Foto Bersama">
+  </div>
+</section>
+
+<!-- Audio Background Music -->
+<audio id="backgroundMusic" loop autoplay muted>
+  <source src="music.mp3" type="audio/mpeg">
+  Browser tidak mendukung audio.
+</audio>
+
+<!-- Music Control Button -->
+<div class="music-control" id="musicControl">
+  <button class="music-btn" onclick="toggleMusic()">
+    <span id="musicIcon"><i class="fa-solid fa-volume-xmark"></i></span>
+  </button>
+</div>
+
+
+<!-- FOTO MEMBER -->
+<!-- FOTO MEMBER -->
+<section id="members">
+  <h2>"OFFICIAL TEAM"</h2>
+  <div class="member-grid">
+    
+    <!-- Baris Pertama -->
+    <div class="polaroid">
+      <img src="img/member1.jpg" alt="Aulia Nahdha">
+      <div class="caption">
+        <h3>Fahri Hasbi</h3>
+        <p class="quote">“jangan hitung temanmu saat dirimu senang tapi hitunglah teman mun di saat dirimu susah,#sacentang nambru”</p>
+        <p class="insta">@fhrymhmdhsbi_</p>
+      </div>
+    </div>
+
+    <div class="polaroid">
+      <img src="img/member2.jpg" alt="Riean Deprieansyah">
+      <div class="caption">
+        <h3>Riean Deprieansyah</h3>
+        <p class="quote">“arageng milik nya sing sarehat sadayana nuhun brader ah,di mulai dengan ragu-ragu di akhiri dengan kenangan”</p>
+        <p class="insta">@Riean_Deprieansyah</p>
+      </div>
+    </div>
+
+    <div class="polaroid">
+      <img src="img/member18.jpg" alt="Nuha Rizki">
+      <div class="caption">
+        <h3>great</h3>
+        <p class="quote">"menjadi lebih baik dari yang terbaik"</p>
+        <p class="insta">@great</p>
+      </div>
+    </div>
+
+    <div class="polaroid">
+      <img src="img/member4.jpg" alt="Ridwan Akbar">
+      <div class="caption">
+        <h3>Muhamad Rehan</h3>
+        <p class="quote">“Dear God, if today I lose my hope, please remind me that your plans are better than my dreams.”</p>
+        <p class="insta">@Mhanriz_</p>
+      </div>
+    </div>
+
+    <!-- Baris Kedua -->
+    <div class="polaroid">
+      <img src="img/member5.jpg" alt="Member Baru">
+      <div class="caption">
+        <h3>Hafizh Mahkan</h3>
+        <p class="quote">“wajar muka ku burik karna mainku di bawah terik,bukan di bawah gemerlap lampu diskotik”</p>
+        <p class="insta">@Hafizhmahkan</p>
+      </div>
+    </div>
+
+    <div class="polaroid">
+      <img src="img/member6.jpg" alt="Member Baru">
+      <div class="caption">
+        <h3>Almer</h3>
+        <p class="quote">“no magnum no life”</p>
+        <p class="insta">@almrdjavier</p>
+      </div>
+    </div>
+
+    <div class="polaroid">
+      <img src="img/member32.jpg" alt="Member Baru">
+      <div class="caption">
+        <h3>Narda Prima Sukma</h3>
+        <p class="quote">“Cita Cita Jadi Haji”</p>
+        <p class="insta">@nardaprimas</p>
+      </div>
+    </div>
+
+    <div class="polaroid">
+      <img src="img/member8.jpg" alt="Member Baru">
+      <div class="caption">
+        <h3>Aulia Rahmawati</h3>
+        <p class="quote">“hehe maap yaa kalo aku nyeselin,tapi lucu kan”</p>
+        <p class="insta">@_aullrhm</p>
+      </div>
+    </div>
+
+    <!-- Baris Ketiga -->
+<div class="polaroid">
+  <img src="img/member9.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Resyifa Naya</h3>
+    <p class="quote">“adakah rw 25 dihatimu? ADA”</p>
+    <p class="insta">@resyfina</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member10.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Fadhil Dzaky</h3>
+    <p class="quote">“Keep spirit and calm down”</p>
+    <p class="insta">@fdzakyppp</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member11.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Amelia</h3>
+    <p class="quote">“Terimakasih sudah mencoba menjadi lebih baik”</p>
+    <p class="insta">@ameliana_dp</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member12.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Arsy Dena</h3>
+    <p class="quote">“dimanapun kita berada jangan lupakan rumah”</p>
+    <p class="insta">@arshendra_</p>
+  </div>
+</div>
+
+<!-- Baris Keempat -->
+<div class="polaroid">
+  <img src="img/member13.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Farizakry</h3>
+    <p class="quote">“Apapun yang terjadi, kita abadi”</p>
+    <p class="insta">@jakrieee</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member14.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Rifa Nadya</h3>
+    <p class="quote">"jangan di senggol, udah wudhu"</p>
+    <p class="insta">@rifanadyaas_</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member15.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Rizky Akbar</h3>
+    <p class="quote">“Ngejar cewe uang habisNgejar uang cewe berbaris”</p>
+    <p class="insta">@Rizki_akbar</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member16.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Hanifah</h3>
+    <p class="quote">“Mau males tapi da udah males”</p>
+    <p class="insta">@hannnurr__</p>
+  </div>
+</div>
+
+<!-- Baris Ketiga -->
+<div class="polaroid">
+  <img src="img/member17.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Rizki Khaikal</h3>
+    <p class="quote">“Nothing lasts forever, we can change the future.aku berlutut hah tida akan”</p>
+    <p class="insta">@Rizki_khaikal</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member19.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Diandra Kausar</h3>
+    <p class="quote">“lebih baik menjauh dari pada tersakiti itu lah caraku menggoreng ikan”</p>
+    <p class="insta">@ndraaktr_</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member3.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Ayang nur </h3>
+    <p class="quote">“Info Nuker Rasa Kecewa Jadi Saldo Dana”</p>
+    <p class="insta">@ayangnurr</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member21.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Anandhitha Putri</h3>
+    <p class="quote">“Tetap blar blar meski sudah bubar 🤙🏾”</p>
+    <p class="insta">@nandhithyz</p>
+  </div>
+</div>
+
+<!-- Baris Ketiga -->
+<div class="polaroid">
+  <img src="img/member22.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Arva Anak Rajin</h3>
+    <p class="quote">“jangan terlalu memikirkan apa yang
+telah terjadi,jika itu baik syukuri,jika itu
+buruk cukup perbaiki,dan berusaha
+          untuk tidak mengulangi”</p>
+    <p class="insta">@arvaanakrajin</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member23.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>banyu</h3>
+    <p class="quote">“agar silaturahmi tida terputus,adakah seratus”</p>
+    <p class="insta">@bnyurfkymlnn_</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member24.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Deral Abrisam</h3>
+    <p class="quote">“Pursuit Happyness”</p>
+    <p class="insta">@derallabrisam</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member30.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>HANS LUCKY RACHMAN HAKIM</h3>
+    <p class="quote">“jangan lupa untuk meminum air segar”</p>
+    <p class="insta">@lucky</p>
+  </div>
+</div>
+
+
+<!-- Baris Ketiga -->
+<div class="polaroid">
+  <img src="img/member26.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Muhammad Zidan Muzaky</h3>
+    <p class="quote">“masalah membuat kita dewasa, oleh karena itu sering seringlah bermasalah”</p>
+    <p class="insta">@idann_mzky</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member28.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Bany Nur Arasy Dzulhijah </h3>
+    <p class="quote">“meskipun muka ku hitam jangan jadikan aku kekasih gelap mu”</p>
+    <p class="insta">@ _baninurr</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member27.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Akma raqilla hidayatna</h3>
+    <p class="quote">“jangan memberi makan kuda yang tidak kamu tunggangi”</p>
+    <p class="insta">@akmma_</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member29.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>bilal alhaq</h3>
+    <p class="quote">“yang lain boleh panas kita mah gaya bebas”</p>
+    <p class="insta">@bilal</p>
+  </div>
+</div>
+
+<!-- Baris Ketiga -->
+<div class="polaroid">
+  <img src="img/member31.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3> puteri aprelia sari</h3>
+    <p class="quote">“ga perlu kata kata yang penting bukti nyata”</p>
+    <p class="insta">@puteriapreliaa</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>nazwa</h3>
+    <p class="quote">“Kutipan keren dari member 10...”</p>
+    <p class="insta">@username10</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>imam</h3>
+    <p class="quote">“Kutipan keren dari member 11...”</p>
+    <p class="insta">@username11</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="img/member25.jpg" alt="Member Baru">
+  <div class="caption">
+    <h3>Muhamad Sahrul</h3>
+    <p class="quote">“Berani bermimpi,Gigih meraih”</p>
+    <p class="insta">@shrl_s_r</p>
+  </div>
+</div>
+
+
+
+  </div>
+</section>
+
+
+    
+    <!-- Tambahkan member lain -->
+  </div>
+</section>
+
+<!-- MEMORIES SLIDER -->
+<section class="memories">
+  <h2>"MEMORIES TOGETHER"</h2>
+  <div class="slider-container">
+    <button class="nav-btn left">◀</button>
+    <div class="slider" id="slider">
+      <img src="img/memori1.jpg" alt="Memory 1">
+      <img src="img/memori2.jpg" alt="Memory 2">
+      <img src="img/memori3.jpg" alt="Memory 3">
+      <img src="img/memori4.jpg" alt="Memory 4">
+    </div>
+    <button class="nav-btn right">▶</button>
+  </div>
+
+  <!-- Modal untuk Zoom Foto -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+</section>
+
+<!-- KENANGAN MOMENT (Video Section) -->
+<section class="moments">
+  <h2>"VIDIO MOMENT"</h2>
+
+  <!-- Video Lebar Penuh -->
+  <div class="moment-video">
+    <video controls autoplay muted>
+      <source src="img/video.mp4" type="video/mp4">
+      Browser kamu tidak mendukung video.
+    </video>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 MUDA-MUDI | All Rights XXIYANX
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
