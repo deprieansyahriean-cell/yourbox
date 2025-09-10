@@ -1,9 +1,236 @@
+/* ============ GLOBAL RESET ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ============ HERO SECTION ============ */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-photo img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ============ MUSIC CONTROL ============ */
+.music-control {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.music-btn {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-size: 18px;
+}
+
+/* ============ MEMBERS GRID ============ */
+#members {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#members h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default desktop */
+  gap: 20px;
+}
+
+.polaroid {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.polaroid:hover {
+  transform: scale(1.05);
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.caption {
+  margin-top: 10px;
+}
+
+.caption h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.caption .quote {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.caption .insta {
+  font-size: 13px;
+  color: #777;
+}
+
+/* ============ MEMORIES SLIDER ============ */
+.memories {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+/* Modal Zoom */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  border-radius: 12px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* ============ VIDEO SECTION ============ */
+.moments {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.moment-video video {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ============ FOOTER ============ */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+  margin-top: 30px;
+}
+
+/* ============ RESPONSIVE ============ */
+
+/* Tablet & HP besar */
+@media (max-width: 1024px) {
+  .member-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+
+/* HP semua ukuran */
+@media (max-width: 768px) {
+  .member-grid {
+    grid-template-columns: repeat(3, 1fr); /* tetap 3 kolom */
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .polaroid {
+    padding: 10px;
+  }
+}
+
 /* RESET */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f9f9f9;
+  background: hsl(0, 0%, 98%);
   color: #333;
   line-height: 1.6;
 }
